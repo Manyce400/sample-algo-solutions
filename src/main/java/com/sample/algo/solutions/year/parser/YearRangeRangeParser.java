@@ -38,7 +38,6 @@ public class YearRangeRangeParser implements IYearRangeParser {
                 }
             } else {
                 if (NumberUtils.isCreatable(token)) {
-                    System.out.println("Adding individual token "+ token);
                     int actualYear = NumberUtils.toInt(token);
                     finalYearRange.add(actualYear);
                 }
